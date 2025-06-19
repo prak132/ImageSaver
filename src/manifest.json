@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Media Saver",
+  "version": "1.0",
+  "description": "Saves images, videos, and audio files to specific formats",
+  "permissions": ["contextMenus", "downloads", "activeTab", "scripting", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "128": "icon.png"
+  }
+}
